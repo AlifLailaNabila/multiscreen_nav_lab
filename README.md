@@ -101,3 +101,18 @@ multiscreen_nav_lab/
 flutter pub get
 flutter run
 ```
+## Results & Screenshots
+
+The app was tested end-to-end on an Android emulator (Pixel 10, API level current).
+All navigation paths worked as expected:
+
+- **Home screen** — displays the seeded task list with working navigation to Detail
+- **Detail screen** — correctly receives and displays the passed `TaskItem`
+- **Add Task screen** — returns a new `TaskItem` back to Home on Save; Cancel and
+  the hardware back button both resolve to `null` safely with no crash
+- **Validation** — empty title is blocked with an inline error before any pop occurs
+
+_Add your own screenshots here, e.g.:_
+`![Home screen](screenshots/home.png)`
+`![Detail screen](screenshots/detail.png)`
+`![Add Task form](screenshots/add_task.png)`
